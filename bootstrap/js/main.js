@@ -6,7 +6,8 @@
   anpan = document.getElementById("anpan");
   unmei = function(txt, hiita) {
     result.innerHTML = txt;
-    return (document.getElementById("anpan")).src = "img/anpan-0" + hiita + ".png";
+    console.log(anpan.src);
+    return anpan.src = "img/anpan-0" + hiita + ".jpg";
   };
   kuji = function() {
     var hiita;
