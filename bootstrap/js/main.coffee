@@ -1,13 +1,11 @@
 do->
   btn = document.getElementById "omikuji"
-
   result = document.getElementById "unmei"
-
   anpan = document.getElementById "anpan"
   unmei = (txt,hiita)->
     result.innerHTML = txt
-    console.log anpan.src
-    anpan.src = "img/anpan-0" + hiita + ".jpg"
+    (document.getElementById "anpan").src = "img/anpan-0" + hiita + ".png"
+    # anpan.src = "img/anpan-0" + hiita + ".jpg"
 
   kuji = ->
     # console.log Math.floor( Math.random() * 4 )
